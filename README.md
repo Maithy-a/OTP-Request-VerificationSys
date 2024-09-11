@@ -1,3 +1,4 @@
+
 ## OTP Verification System Using Africa's Talking API (Sandbox)
 
 This project is a basic OTP (One-Time Password) sending and verification system, built with PHP, Bootstrap, and Composer. It utilizes the Africa's Talking API (Sandbox environment) to generate and send OTPs via SMS to users, ensuring secure authentication. The system includes both sending the OTP and verifying it for user login or account validation.
@@ -12,8 +13,8 @@ This project is a basic OTP (One-Time Password) sending and verification system,
 ### Installation:
 1. Clone the repository:
    ```bash
-   git clone https://github.com/Maithy-a/OTP-Africa-s-talking.git
-   cd OTP-Africa-s-talking
+     git clone https://github.com/Maithy-a/OTP-Africa-s-talking.git
+     cd OTP-Africa-s-talking
    ```
 
 2. Install dependencies with Composer:
@@ -34,7 +35,18 @@ This project is a basic OTP (One-Time Password) sending and verification system,
    AFRICASTALKING_API_KEY=your_api_key_here
    ```
 
-5. Run the project on a local PHP server:
+5. **Obtain your OTP code via Africa's Talking Simulator**:  
+   Since this project uses Africa's Talking Sandbox, the OTP will not be sent to your physical phone. Instead, follow these steps to use the simulator to retrieve the OTP:
+
+   - Go to the [Africa's Talking Dashboard](https://account.africastalking.com).
+   - Click on the "Sandbox" section.
+   - You will be redirected to your Sandbox Dashboard. From there, click on "Launch Simulator" on the left sidebar.
+   - In the Simulator, you'll get a virtual phone interface. Enter a phone number you wish to use for receiving the OTP (e.g., a fake number starting with `+254` for Kenyan numbers) and click "Connect."
+   - Once connected, you'll see a virtual phone screen with options for SMS, Calls, and Payments.
+   - Click on the "SMS" app on the virtual phone screen to open the SMS inbox.
+   - Now, when you send the OTP using your application, it will appear in the SMS inbox of the simulator.
+
+6. Run the project on a local PHP server:
    ```bash
    php -S localhost:8000
    ```
