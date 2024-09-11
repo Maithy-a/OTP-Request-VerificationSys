@@ -1,22 +1,46 @@
-# OTP-Africa-s-talking
+## OTP Verification System Using Africa's Talking API (Sandbox)
 
-This project implements a One-Time Password (OTP) generation and verification system using the Africa's Talking API. The application allows users to securely send and verify OTPs via SMS, enhancing security for user authentication processes. The project is built using PHP, Composer, and Bootstrap.
+This project is a basic OTP (One-Time Password) sending and verification system, built with PHP, Bootstrap, and Composer. It utilizes the Africa's Talking API (Sandbox environment) to generate and send OTPs via SMS to users, ensuring secure authentication. The system includes both sending the OTP and verifying it for user login or account validation.
 
-## Features
+### Features:
+- OTP generation and sending via SMS using Africa's Talking API (Sandbox)
+- OTP verification for secure user authentication
+- Simple user interface built with Bootstrap
+- PHP backend for managing OTP generation and verification
+- Composer for managing dependencies
 
-- **OTP Generation**: Users can generate an OTP that is sent to their mobile number.
-- **OTP Verification**: The system allows verification of the OTP entered by the user.
-- **Time Management**: Users can check the elapsed time since the OTP was generated and the remaining time until it expires.
+### Installation:
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Maithy-a/OTP-Africa-s-talking.git
+   cd OTP-Africa-s-talking
+   ```
 
-## Getting Started
+2. Install dependencies with Composer:
+   ```bash
+   composer require africastalking/africastalking
+   composer require vlucas/phpdotenv
+   ```
 
-To set up the project, clone the repository and install the necessary dependencies using Composer. You will need to register for an API key on the Africa's Talking portal and update the configuration file with your credentials.
+3. Set up your Africa's Talking Sandbox API credentials in the `.env` file:
+   ```env
+   AFRICASTALKING_USERNAME=sandbox
+   AFRICASTALKING_API_KEY=your_api_key_here
+   ```
 
-## API Endpoints
+4. Create a `.env` file at the root of the project and add the following environment variables:
+   ```env
+   AFRICASTALKING_USERNAME=sandbox
+   AFRICASTALKING_API_KEY=your_api_key_here
+   ```
 
-- **POST /api/v1/otp**: Generates an OTP and sends it to the specified phone number.
-- **POST /api/v1/otp/verify**: Verifies the validity of the OTP entered by the user.
-- **GET /api/v1/otp/time/elapsed**: Retrieves the elapsed time since the OTP was generated.
-- **GET /api/v1/otp/time/remaining**: Retrieves the remaining time until the OTP expires.
+5. Run the project on a local PHP server:
+   ```bash
+   php -S localhost:8000
+   ```
 
-This project is built with PHP, utilizing the Africa's Talking SMS gateway for OTP delivery. It uses Composer for dependency management and Bootstrap for styling and responsive design. It is designed for developers looking to implement secure user authentication in their applications.
+### Requirements:
+- Africa's Talking API credentials (Sandbox)
+- PHP 7.4+
+- Composer
+- `vlucas/phpdotenv` for environment variable management
