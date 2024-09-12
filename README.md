@@ -13,7 +13,7 @@ This project is a basic OTP (One-Time Password) sending and verification system,
 ### Installation:
 1. Clone the repository:
    ```bash
-     git clone https://github.com/Maithy-a/OTP-Africa-s-talking.git
+     git clone https://github.com/Maithy-a/OTP-Request-VerificationSys.git
      cd OTP-Africa-s-talking
    ```
 
