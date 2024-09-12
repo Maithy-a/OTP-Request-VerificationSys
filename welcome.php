@@ -21,7 +21,7 @@
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
         <div class="container">
-            <a class="navbar-brand" href="#"><img src="bonface.png" alt="logo" style="width: 50px; height: auto;">Maithy-a</a>
+            <a class="navbar-brand" href="#"><img src="bonface.png" alt="logo" style="width: 80px; height: auto;">Maithy-a</a>
             
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"><i class="fa-solid fa-bars"></i></span>
@@ -49,10 +49,7 @@
     <div class="container d-flex justify-content-center align-items-center" style="height: 80vh;">
         <div class="text-center">
             <h1 class="display-4 mb-4">Welcome back!</h1>
-            <p class="lead">You have successfully verified your OTP.</p>
-
-            
-
+            <p class="lead">You have successfully verified your OTP.</p>          
         </div>
     </div>
 
@@ -77,7 +74,6 @@
 
     <?php include 'footer.php'; ?>
 
-    <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
 </body>
 </html>
