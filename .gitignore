@@ -2,4 +2,4 @@
 .env
 
 # Ignore vendor directory
-/vendor/
+
