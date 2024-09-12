@@ -40,18 +40,12 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             transform: translateX(-50%);
             z-index: 9999;
         }
-
-        .alert-alt {
-            background-color: #f8f9fa; /* Light background */
-            border-color: #e9ecef; /* Light border */
-            color: #495057; /* Darker text */
-        }
     </style>
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
         <div class="container">
-            <a class="navbar-brand" href="#"><img src="bonface.png" alt="logo" style="width: 50px; height: auto;">Maithy-a</a>
+            <a class="navbar-brand" href="#"><img src="bonface.png" alt="logo" style="width: 80px; height: auto;">Maithy-a</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"><i class="fa-solid fa-bars"></i></span>
             </button>
@@ -109,7 +103,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
     <script>
         document.getElementById('otpForm').addEventListener('submit', function(event) {
-            event.preventDefault(); // Prevent immediate form submission
+            event.preventDefault();
             const verifyButton = document.getElementById('verifyButton');
             verifyButton.disabled = true;
             verifyButton.classList.add('m-btn-loading');
@@ -120,7 +114,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             }, 2500);
         });
 
-        // Automatically close the alert 
         if (document.querySelector('.alert')) {
             setTimeout(function() {
                 let alertElement = document.querySelector('.alert');
