@@ -1,0 +1,3 @@
+[submodule "vendor/africastalking/africastalking"]
+	path = vendor/africastalking/africastalking
+	url = https://github.com/AfricasTalkingLtd/africastalking-php.git
