@@ -1,6 +1,6 @@
 <?php
 
-require 'vendor/autoload.php'; // Include Composer's autoload file
+require 'vendor/autoload.php'; 
 
 use AfricasTalking\SDK\AfricasTalking;
 use Dotenv\Dotenv;
@@ -76,18 +76,17 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     <style>
         .alert-container {
             position: fixed;
-            top: 20px;
-            left: 50%;
+            top: 30px;
+            left: 50% ;
             transform: translateX(-50%);
             z-index: 9999;
-            max-width: 500px;
         }
     </style>
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
         <div class="container">
-            <a class="navbar-brand" href="#"><img src="bonface.png" alt="logo" style="width: 50px; height: auto;">Maithy-a</a>
+            <a class="navbar-brand" href="#"><img src="bonface.png" alt="logo" style="width: 80px; height: auto;user-select: none;">Maithy-a</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"><i class="fa-solid fa-bars"></i></span>
             </button>
@@ -142,7 +141,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
     <script>
-        // Automatically close the alert
         if (document.querySelector('.alert')) {
             setTimeout(function() {
                 let alertElement = document.querySelector('.alert');
@@ -156,7 +154,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         if (document.querySelector('.alert-success')) {
             setTimeout(function() {
                 window.location.href = 'verify_otp.php';
-            }, 3500);
+            }, 2000);
         }
     </script>
 </body>
