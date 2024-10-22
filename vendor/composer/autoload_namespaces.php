@@ -6,4 +6,5 @@ $vendorDir = dirname(__DIR__);
 $baseDir = dirname($vendorDir);
 
 return array(
+    'MyLibraryNamespace' => array($vendorDir . '/africastalking/africastalking/src'),
 );
